@@ -1,0 +1,124 @@
+.sidebar{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    min-width: 5rem;
+    width: 5rem;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.addwidth{
+    min-width: 11rem !important;
+    width: 11rem;
+}
+
+.addwidth_nav{
+    width: 20rem;
+    left: 0px!important;
+}
+
+.black-bg{
+    background-color: #1e1f20 !important;
+    & p{
+        color: #C4C7C5;
+    }
+    &.sidebar img{
+        filter: brightness(0) invert(1);
+    }
+}
+
+.sidebar img {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar .menu{
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 13px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+    overflow: hidden;
+    & img{
+        width: 14px;
+        height: 20px;
+    }
+}
+
+.black-light{
+    background-color: #1A1A1C;
+}
+.light-light{
+    background-color:#f0f4f9;
+}
+
+.bg-light{
+    background-color:#e6eaf1;
+}
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+/* Hover */
+.hover-light{
+    @apply hover:bg-[#e2e6eb] !important;
+}
+.hover-dark{
+    @apply hover:bg-[#333537] !important;
+}
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:640px){
+    .sidebar{
+        position: fixed;
+        left: -5rem;
+        font-size: 15px;
+    }
+    .sidebar .menu{
+        opacity: 0;
+    }
+    .sidebar .new-chat{
+        font-size: 13px;    
+    }
+}
