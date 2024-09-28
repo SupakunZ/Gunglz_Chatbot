@@ -18,7 +18,7 @@ export const ThemeProvider = ({ children }) => {
   const delayPara = (index, nextWord) => {
     setTimeout(() => {
       setResultData(prev => prev + nextWord)
-      console.log(resultData)
+      // console.log(resultData)
     }, 75 * index);
   }
 
@@ -30,8 +30,15 @@ export const ThemeProvider = ({ children }) => {
     document.querySelector('.sidebar').classList.toggle('addwidth_nav');
   }
 
+  const handleDelete = (name) => {
+    const result = prevPrompts.filter((data) => data != name)
+    setShowResult(false)
+    return setPrevPrompts(result)
+  }
+
   const toggle = () => {
     setMode((prev) => (prev === "dark" ? "light" : "dark"));
+    setExtend(false)
   }
 
   const onSent = async (prompt) => {
@@ -44,12 +51,14 @@ export const ThemeProvider = ({ children }) => {
     if (typeof (prompt) == 'string') {
       response = await run(prompt)
       setRecentPrompt(prompt)
-      console.log('string', prompt)
+      // console.log('string', prompt)
     } if (typeof (prompt) == 'object') {
-      setPrevPrompts(prev => [...prev, input])
+      if (!prevPrompts.includes(input)) {
+        setPrevPrompts(prev => [...prev, input])
+      }
       setRecentPrompt(input)
       response = await run(input)
-      console.log('Object', prompt)
+      // console.log('Object', prompt)
     }
     let responseArray = response.split("**")
     let newResponse = ""
@@ -87,7 +96,8 @@ export const ThemeProvider = ({ children }) => {
     mode,
     habdleClick,
     extended,
-    setExtend
+    setExtend,
+    handleDelete
   }
 
   //ส่ง func state จาก store

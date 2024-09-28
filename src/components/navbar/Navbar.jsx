@@ -21,7 +21,7 @@ const links = [
   {
     id: 3,
     title: "Github",
-    url: "https://github.com/SupakunZ"
+    url: "https://github.com/SupakunZ/Gunglz_Chatbot"
   },
 ]
 

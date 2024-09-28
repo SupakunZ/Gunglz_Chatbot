@@ -212,7 +212,7 @@
 
 @media (max-width:1070px){
     .main {
-        width: auto;
+        width: 80vw;
     }
     .main .greet{
         font-size: 50px;

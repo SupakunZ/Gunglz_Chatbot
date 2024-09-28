@@ -13,7 +13,7 @@
 
 .addwidth{
     min-width: 11rem !important;
-    width: 11rem;
+    width: 11rem !important;
 }
 
 .addwidth_nav{
@@ -82,13 +82,60 @@
 
 .sidebar .recent-entry{
     display: flex;
-    align-items: start;
+    align-items: center;
+    justify-content: space-between;
     gap: 10px;
     padding: 10px;
-    padding-right: 40px;
     border-radius: 50px;
     color: #282828;
     cursor: pointer;
+    & div {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.sidebar .recent-entry:hover{
+    .point-icon-dark{
+        visibility: visible;
+    }
+    .point-icon-light{
+        visibility: visible;
+    }
+}
+
+/* Delete Icon */
+.point-icon-dark{
+    visibility: hidden;
+    padding: 3px;
+    border-radius: 100%;
+}
+
+.point-icon-dark:hover{
+    background-color: #2b2d2ec0;
+}
+
+.point-icon-light{
+    visibility: hidden;
+    padding: 3px;
+    border-radius: 100%;
+
+    & svg {
+        fill: #282828 !important;
+    }
+}
+
+.point-icon-light:hover{
+    background-color:#ced2d8;
+}
+
+.content-recent{
+    max-height: 45vh;
+    overflow-y: scroll;
+}
+
+.content-recent::-webkit-scrollbar{
+    display: none;
 }
 
 /* Hover */
