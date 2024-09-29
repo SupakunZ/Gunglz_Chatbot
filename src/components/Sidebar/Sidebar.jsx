@@ -1,10 +1,9 @@
 'use client'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import "./Sidebar.css";
 import { assets } from "../../assets/assets";
 import { ThemeContext } from '../../app/context/ThemeContext';
 import Image from 'next/image';
-// import menu_icon from '../../assets/menu_icon.png'
 
 const Sidebar = () => {
     const { onSent, prevPrompts, mode, habdleClick, extended, setExtend, setShowResult, handleDelete } = useContext(ThemeContext)

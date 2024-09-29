@@ -12,7 +12,6 @@ const Footer = () => {
         <Image src='/3.png' width={15} height={15} className={styles.icon} alt='Lama Dev Twitter' />
         <Image src='/4.png' width={15} height={15} className={styles.icon} alt='Lama Dev Youtube' />
       </div>
-      {/* <div>Terms of Service | Privacy Policy</div> */}
     </div>
   )
 }
