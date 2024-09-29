@@ -97,7 +97,8 @@ export const ThemeProvider = ({ children }) => {
     habdleClick,
     extended,
     setExtend,
-    handleDelete
+    handleDelete,
+    setShowResult
   }
 
   //ส่ง func state จาก store
