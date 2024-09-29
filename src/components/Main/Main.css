@@ -243,7 +243,7 @@
 
   @media (max-width:640px){
     .main {
-        width: 95vw;
+        width: 93vw;
     }
     .main .card p{
         font-size: 16px;
@@ -257,6 +257,9 @@
     .search-box div{
         position: absolute;
         right: 2.3rem;
+    }
+    .main {
+        width: 91vw;
     }
     .main .cards{
         grid-template-columns: repeat(1,minmax(180px, 1fr));

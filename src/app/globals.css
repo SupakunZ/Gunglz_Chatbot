@@ -13,6 +13,10 @@ body {
   color: #bbb;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 a{
   text-decoration: none;
   color: inherit; /* สืบทอดสีจาก parent */
