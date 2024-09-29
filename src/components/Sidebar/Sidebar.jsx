@@ -44,7 +44,7 @@ const Sidebar = () => {
                     </div>) : null
                 }
             </div>
-            <div className="bottom">
+            <div className={`bottom ${extended ? 'start' : null}`}>
                 <div className={`bottom-item recent-entry ${mode == 'dark' ? 'hover-dark' : 'hover-light'}`}>
                     <div>
                         <Image src={assets.question_icon} alt="" />
@@ -64,7 +64,7 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
