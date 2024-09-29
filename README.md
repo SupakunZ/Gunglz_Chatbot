@@ -3,10 +3,10 @@ Gunglz is a chatbot application developed using the Next.JS, Tailwind CSS and Go
 
 https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa-5d163b122637
 
-## 🚗 Live Demo 
+## 👽 Live Demo 
 <a href='https://tesla-cloness.netlify.app' target="_blank">Gunglz Chatbot</a>
 
-## 🚦 Features
+## 🤖 Features
 
   <ul>
       <li>Personalized AI chatbot</li>
@@ -14,7 +14,7 @@ https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa
       <li>Responsive with all devices</li>
   </ul>
 
-## 🧭 Technologyies Used
+## 🚀 Technologyies Used
   
   <ul>
       <li>NextJS</li>
@@ -23,7 +23,7 @@ https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa
   </ul>
 
 
-## 🚧 Installation
+## 🌜 Installation
 
 1. Clone this repository :
 
