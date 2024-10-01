@@ -11,6 +11,7 @@ https://github.com/user-attachments/assets/a7f2acdc-7dee-4c52-ae53-db5cdf2940cf
   <ul>
       <li>Personalized AI chatbot</li>
       <li>Conversational memory and Chat History</li>
+      <li>Dark mode</li>
       <li>Responsive with all devices</li>
   </ul>
 
